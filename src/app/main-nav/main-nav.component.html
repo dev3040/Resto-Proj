@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'">
+
+    <mat-toolbar></mat-toolbar>
+    <mat-nav-list>
+
+      <a routerLink="" mat-list-item>Home</a>
+      <a routerLink="add" mat-list-item>Add Restaurant</a>
+      <a routerLink="" mat-list-item>List Restaurant</a>
+      <a mat-list-item routerLink="login">Login</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <mat-toolbar color="primary">
+      <button  mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+        <mat-icon mat-raised-button (click)="drawer.toggle()">menu</mat-icon>
+      </button>
+
+      <span>Resto-proj</span>
+    </mat-toolbar>
+    <div class="container mt-3 navBody ">
+      <router-outlet></router-outlet>
+    
+    </div>
+   
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+<!-- mat-drawer-backdrop mat-drawer-shown -->

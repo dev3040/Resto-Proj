@@ -1,0 +1,24 @@
+.example-full-width
+{
+    width: 100%;
+}
+.btn_signup{
+    background-color: #27b8b0;
+    color: white;
+    height: 40px;
+    width: 30%;
+    border-radius: 50px;
+    box-shadow: none;
+    align-items: center;
+    position: relative;
+    left: 39%;
+}
+  /* Change label color on focused */
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: black !important;
+  }
+  
+  /* underline border color on focused */
+  ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color:#27b8b0 !important;
+  }

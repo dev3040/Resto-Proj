@@ -1,0 +1,42 @@
+.example-full-width {
+  width: 100%;
+}
+
+.btn_add {
+  background-color: #27b8b0;
+  color: white;
+  height: 40px;
+  width: 20%;
+  /* border-radius: 50px; */
+  box-shadow: none;
+  align-items: center;
+  position: relative;
+  left: 34%;
+  font-size: 1vw
+}
+
+/* Change label color on focused */
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: black !important;
+}
+
+/* underline border color on focused */
+
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+  background-color: #27b8b0 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .btn_add {
+    background-color: #27b8b0;
+    color: white;
+    height: 40px;
+    width: 50%;
+    box-shadow: none;
+    align-items: center;
+    position: relative;
+    left: 24%;
+    font-size: 20px;
+  }
+}

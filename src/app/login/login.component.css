@@ -1,0 +1,33 @@
+::ng-deep.mat-tab-link,  ::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+    min-width: 50%!important;
+}
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: rgb(39, 184, 176) !important;
+}
+.example-full-width
+{
+    width: 100%;
+}
+.btn_signup{
+    background-color: #27b8b0;
+    color: white;
+    height: 40px;
+    width: 20%;
+    border-radius: 50px;
+    box-shadow: none;
+    align-items: center;
+    position: relative;
+    left: 34%;
+
+}
+
+  
+  /* Change label color on focused */
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: black !important;
+  }
+  
+  /* underline border color on focused */
+  ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color:#27b8b0 !important;
+  }

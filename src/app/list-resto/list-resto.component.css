@@ -1,0 +1,34 @@
+.delete:hover{
+    color: red;
+   
+}
+.view:hover{
+    color:lightskyblue;
+    
+}
+.update:hover{
+    color:orange;
+}
+.operation i{
+    margin-right: 20px;
+}
+
+agm-map {
+    height: 300px;
+  }
+  table {
+    width: 100%;
+  }
+@media screen and (max-width: 600px) {
+    .operation{
+        margin-right: 0px;
+    }
+    .operation i{
+        margin-right: 14px;
+    }
+    .tbl{
+        overflow-x: scroll;
+    }
+    
+  }
+  

@@ -1,0 +1,42 @@
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Successfully added
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<div>
+    <form [formGroup]="addResto" (ngSubmit)="collactRecords()">
+        <!-- <div class="form-group">
+            <label>Enter restaurant name</label>
+            <input type="type" class="form-control" placeholder="Enter name" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input type="type" class="form-control" placeholder="Address" formControlName="address">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Email</label>
+            <input type="type" class="form-control" formControlName="email" placeholder="Email">
+        </div> -->
+        <div class="card_1" style="  margin-left: 5%;
+        margin-right: 5%;">
+            <mat-form-field class="example-full-width">
+                <!-- <input matInput placeholder="Ex. Pizza" value=""> -->
+                <input matInput type="text"  placeholder="Name" formControlName="name">
+            </mat-form-field> <br>
+            <mat-form-field class="example-full-width">
+                
+                <!-- <input matInput placeholder="Ex. Pizza" value=""> -->
+                <input matInput type="text"  placeholder="Address" formControlName="address">
+               
+            </mat-form-field> <br>
+            <mat-form-field class="example-full-width">
+                
+                <!-- <input matInput placeholder="Ex. Pizza" value=""> -->
+                <input matInput type="text"  placeholder="Email" formControlName="email">
+               
+            </mat-form-field> <br>
+            <!-- <button mat-raised-button class="btn_signup" type="submit">Sign in</button> -->
+            <button class="btn_add" mat-raised-button type="submit" >Add Restaurant</button>
+        </div>
+      
+    </form>
+</div>

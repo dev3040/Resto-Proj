@@ -1,0 +1,31 @@
+<div class="container">
+    <form [formGroup]="collReg"  (ngSubmit)="collactRecords()">
+        
+        <!-- <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name"formControlName="name">
+            </div>
+        </div> -->
+        <div class="card_1"style="  margin-left: 5%;
+        margin-right: 5%;">
+        <mat-form-field class="example-full-width">
+            <!-- <input matInput placeholder="Ex. Pizza" value=""> -->
+            <input matInput type="text" placeholder="Name" formControlName="name"
+                id="inputPassword31">
+        </mat-form-field> <br>
+        <mat-form-field class="example-full-width">
+            <!-- <input matInput placeholder="Ex. Pizza" value=""> -->
+            <input matInput type="email" placeholder="Email" formControlName="email" id="inputEmail3">
+        </mat-form-field> <br>
+        <mat-form-field class="example-full-width">
+            <!-- <input matInput placeholder="Ex. Pizza" value=""> -->
+            <input matInput type="password" placeholder="Password" formControlName="password"
+                id="inputPassword3">
+        </mat-form-field> <br></div>
+    
+       
+        
+        <button type="submit" class="btn_signup" mat-raised-button >Sign up</button>
+    </form>
+</div>
