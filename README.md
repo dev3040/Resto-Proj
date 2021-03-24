@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Use JSON Server from github https://github.com/typicode/json-server
+FORMAT:
+"restaurants": [
+    {
+      "name": "123",
+      "email": "123",
+      "address": "1231",
+      "lat": 23.025129328914158,
+      "long": 72.50735203962861,
+      "id": 1
+    }
+  ]
+}
